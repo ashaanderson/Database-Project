@@ -236,11 +236,12 @@ WHERE E.COURSEID = 9876 AND S.StudentID=E.StudentID;
 
 -- 6. List all of the students in a course and all of their scores on every assignment;
 
-SELECT E.StudentID,a.AssignmentID, g.AwardedPoints
+SELECT E.StudentID,a.AssignmentID, E.COURSEID, g.AwardedPoints
 FROM ASSIGNMENT a, Grade g, ENROLLMENT E
-WHERE E.STUDENTID=G.STUDENTID AND E.COURSEID = 7654;-- AND g.AssignmentID=a.AssignmentID;
+WHERE E.STUDENTID=G.STUDENTID AND E.COURSEID = 6543 AND g.AssignmentID=a.AssignmentID;
 
 -- 7. Add an assignment to a course;
+SET SQL_SAFE_UPDATES = 0;
 INSERT INTO ASSIGNMENT VALUES(29,14,100,1);
 
 -- 8. Change the percentages of the categories for a course;
