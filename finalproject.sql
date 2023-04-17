@@ -307,5 +307,5 @@ JOIN (
   JOIN GRADE g ON a.AssignmentID = g.AssignmentID 
   GROUP BY comp.Type, comp.CourseID
 ) subquery ON comp.Type = subquery.Type AND comp.CourseID = subquery.CourseID 
-WHERE s.StudentID = 12345 AND e.CourseID = 7654
+WHERE s.StudentID = 67890 AND e.CourseID = 8765
 GROUP BY s.StudentID, c.CourseName;
