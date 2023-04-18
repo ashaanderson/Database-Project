@@ -20,4 +20,6 @@ Compute the grade for a student, where the lowest score for a given category is 
 used MySQL Workbench to compile code
 
 3. ERD 
+
+
 ![image](https://user-images.githubusercontent.com/83426123/232880391-86e96f09-fbe0-4592-a4ef-02d569deea77.jpeg)
